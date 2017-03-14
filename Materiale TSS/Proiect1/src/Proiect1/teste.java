@@ -16,13 +16,8 @@ import static org.junit.Assert.assertTrue;
  */
 public class teste {
     public int[] gol = new int[]{};
-
     @Test
-    public void testeSuplimentare(){
-        assertTrue(verificare(2, new int[]{0,0}, 0));
-    }
-    @Test
-    public void testareClaseEchivalenta() {
+    public void equivalencePartitioning() {
         int v[] = new int[]{1, 2, 3, 4, 5};
         assertTrue(verificare(5, v, 4));
         assertFalse(verificare(5, v, 3));
@@ -33,9 +28,8 @@ public class teste {
         assertFalse(verificare(0, gol, 0));
         assertFalse(verificare(51, gol, 0));
     }
-
     @Test
-    public void testareValFrontiera() {
+    public void boundaryValueAnalysis() {
         assertFalse(verificare(0, gol, 0));
         assertFalse(verificare(0, gol, 49));
         assertTrue(verificare(1, new int[]{1}, 0));
@@ -47,9 +41,8 @@ public class teste {
         assertFalse(verificare(51, p, 0));
         assertFalse(verificare(51, p, 49));
     }
-
     @Test
-    public void testareCategorii() {
+    public void categoryPartitioning() {
         assertFalse(verificare(-1, new int[]{}, 0));
         assertFalse(verificare(0, new int[]{}, 0));
         assertFalse(verificare(1, new int[]{2}, -1));
@@ -68,14 +61,12 @@ public class teste {
         assertFalse(verificare(50, p, 0));
         assertFalse(verificare(51, new int[]{}, 49));
     }
-
     @Test
     public void statementCoverage() {
         assertFalse(verificare(0, new int[]{}, 0));
-        assertFalse(verificare(1, new int[]{}, 0));
+        assertFalse(verificare(1, new int[]{-4}, 0));
         assertTrue(verificare(1, new int[]{2}, 0));
     }
-
     @Test
     public void branchCoverage() {
         assertFalse(verificare(0, new int[]{}, 0));
@@ -85,7 +76,6 @@ public class teste {
         assertFalse(verificare(1, new int[]{1}, 1));
         assertFalse(verificare(2, new int[]{1}, 0));
     }
-
     @Test
     public void conditionCoverage() {
         assertFalse(verificare(0, new int[]{}, 0));
@@ -97,11 +87,14 @@ public class teste {
         assertFalse(verificare(1, new int[]{-1}, 0));
         assertTrue(verificare(1, new int[]{1}, 0));
     }
-
     @Test
-    public void caiTestare() {
+    public void pathCoverage() {
         assertFalse(verificare(0, new int[]{}, 0));
         assertFalse(verificare(1, new int[]{-1}, 0));
         assertTrue(verificare(1, new int[]{2}, 0));
+    }
+    @Test
+    public void killChangedConditionalBoundary(){
+        assertTrue(verificare(2, new int[]{0,0}, 0));
     }
 }

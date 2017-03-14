@@ -6,12 +6,12 @@ package Proiect1;
 public class verificareVector {
     public static boolean verificare(int n, int v[], int count){
         if (count<0 || count>n-1 || n<1 || n>50 || v.length!=n) {
-            //System.out.println("Conditii nesatisfacute");
+            System.out.println("Conditii nesatisfacute");
             return false;
         }
         for (int i=0;i<v.length;i++)
             if (v[i]<0){
-                //System.out.println("Conditii nesatisfacute");
+                System.out.println("Conditii nesatisfacute");
                 return false;
             }
         return count == numarPerechi(v);
