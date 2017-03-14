@@ -1,0 +1,45 @@
+parcare STORAGE 650
+cosuri STORAGE 70
+carucioare STORAGE 650
+nr_produse VARIABLE RN1@96+5
+
+GENERATE (Exponential(1,0,6)),,,300;un client la 6 sec,D indica nr maxim de tranz
+TRANSFER ,intrare
+GENERATE (Exponential(1,0,4)),,1800,900;1la4,blocul c indica intarzierea
+TRANSFER ,intrare
+GENERATE (Exponential(1,0,8)),,5400,450;1la8
+TRANSFER ,intrare
+GENERATE (Exponential(1,0,12)),,9000,300;1la12
+
+intrare TEST L S$parcare,650,iesire
+ENTER parcare
+ADVANCE 60
+ASSIGN 1,V$nr_produse
+TEST L P1,10,ia_carut
+ENTER cosuri
+ADVANCE (10#P1)
+SEIZE casa_speciala
+ADVANCE  (2#P1+(RN1@3)#5+25)
+RELEASE casa_speciala
+ADVANCE 60
+LEAVE cosuri
+TRANSFER ,elibereaza		
+
+ia_carut ENTER carucioare
+ADVANCE (10#P1)
+SELECT MIN coadamin,2,18,,Q
+;P$coadamin=argminQi chestia asta returneaza identif i care este numele cozii, pt care se obtine
+;valoarea Qi minima       Q2 furnizeaza lungimea(nr de tranzactii existente in coada cu numele 2)
+QUEUE P$coadamin
+SEIZE P$coadamin
+ADVANCE (2#P1+(RN1@3)#5+25)
+RELEASE P$coadamin
+DEPART P$coadamin
+LEAVE carucioare 
+
+elibereaza LEAVE parcare
+
+iesire TERMINATE
+
+GENERATE 3600
+TERMINATE 1

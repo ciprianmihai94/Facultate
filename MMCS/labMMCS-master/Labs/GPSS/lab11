@@ -1,0 +1,68 @@
+/* c11p2 */
+
+timp TABLE M1,2000,2000,20
+numar TABLE X1,200,10,20
+cerere FUNCTION RN1,D7
+0.10,6/0.35,12/0.65,18/0.8,24/0.92,30/0.97,36/1,48
+
+
+
+GENERATE (EXPONENTIAL(1,0,15))
+ASSIGN 1,FN$cerere
+SAVEVALUE depozit+,0
+TEST L P1,X$depozit,distrugere
+SEIZE masina
+ADVANCE (P1#2),0.17
+SAVEVALUE depozit-,P1
+RELEASE masina
+TABULATE timp
+SAVEVALUE 1+,P1
+TERMINATE
+
+distrugere TERMINATE
+
+GENERATE 45,5
+SAVEVALUE depozit+,60
+TERMINATE
+
+GENERATE 480
+TABULATE numar
+SAVEVALUE 1,0
+TERMINATE 1
+
+
+/* c11p3*/
+
+GENERATE (Exponential(1,0,300))
+SPLIT 2,bloc_copii,1
+SEIZE masina1
+ADVANCE 200,100
+RELEASE masina1
+TRANSFER ,aduna
+bloc_copii TEST E P1,2,prelucrare_m3
+SEIZE masina2
+ADVANCE 80,20
+A MATCH B
+RELEASE masina2
+TRANSFER ,aduna
+prelucrare_m3 SEIZE masina3
+ADVANCE 150,30
+B MATCH A
+RELEASE masina3
+aduna GATHER 3 
+ADVANCE 60
+TEST E P1,1,prelucrare_m12
+SEIZE masina11
+ADVANCE 100,20
+RELEASE masina11
+TRANSFER ,asamblare 
+prelucrare_m12 TEST E P1,2,prelucrare_m13
+SEIZE masina12
+ADVANCE 120,30
+RELEASE masina12
+TRANSFER ,asamblare
+prelucrare_m13 SEIZE masina13
+ADVANCE 120,30
+RELEASE masina13
+asamblare ASSEMBLE 3
+TERMINATE 1

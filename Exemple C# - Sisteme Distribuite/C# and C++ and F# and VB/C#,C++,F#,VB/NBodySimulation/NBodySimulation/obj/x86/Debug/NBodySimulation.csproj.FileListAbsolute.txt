@@ -1,0 +1,1 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulation\obj\x86\Debug\NBodySimulation.csprojResolveAssemblyReference.cache

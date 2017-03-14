@@ -1,0 +1,66 @@
+labMMCS
+=======
+
+Probleme laborator Metode Moderne de Calcul si Simulare
+
+Curs9 - part II
+
+hist table S$depozit,100,100,20
+depozit STORAGE 2000
+
+nivel_depozit VARIABLE S$depozit
+nivel_cerut EQU 800
+
+cerere VARIABLE RN1@24+40
+
+GENERATE 5
+ASSIGN 1,V$nivel_depozit
+TEST L P1,nivel_cerut,iesire
+ADVANCE 5
+ENTER depozit,(1000-P1)
+iesire TERMINATE
+GENERATE 1
+ASSIGN 2,V$cerere
+TEST G S$depozit,P2,afara
+LEAVE depozit,P2
+tabulate hist
+afara TERMINATE 1
+
+-------------------------------------
+
+Curs 10 - part II
+
+
+GENERATE(Exponential(1,0,150))
+SEIZE robot
+ADVANCE 8,1 
+ADVANCE 6
+ADVANCE 8,1
+RELEASE robot
+SEIZE masina1
+ADVANCE (Normal(2,60,10))
+RELEASE masina1
+SEIZE robot
+ADVANCE 8,1
+ADVANCE 7
+ADVANCE 8,1
+RELEASE robot
+SEIZE masina2
+ADVANCE (EXPONENTIAL(1,0,100))
+RELEASE masina2
+SEIZE robot
+ADVANCE 8,1
+ADVANCE 5
+ADVANCE 8,1
+RELEASE robot
+TERMINATE 1
+
+---------------------------------------
+1. Se creaza un nou produs GENERATE
+2. Robotul prinde produsul SEIZE
+3. Indicati intarzierea data de prindere ADVANCE
+4. Robotul aduce produsul la m1 ADVANCE
+5. Pas 3 pentru lasarea produsului la m1 ADVANCE
+6. Produsul ocupa m1 SEIZE masina 2
+7. Timp prelucrare m1
+---------------------------------------

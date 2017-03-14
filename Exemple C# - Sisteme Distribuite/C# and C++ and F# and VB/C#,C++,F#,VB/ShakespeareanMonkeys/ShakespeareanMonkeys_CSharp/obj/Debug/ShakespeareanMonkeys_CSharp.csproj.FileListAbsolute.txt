@@ -1,0 +1,10 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\bin\Debug\ShakespeareanMonkeys.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\bin\Debug\ShakespeareanMonkeys.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\bin\Debug\ShakespeareanMonkeys.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\obj\Debug\ShakespeareanMonkeys.MainForm.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\obj\Debug\ShakespeareanMonkeys.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\obj\Debug\ShakespeareanMonkeys_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\obj\Debug\ShakespeareanMonkeys.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ShakespeareanMonkeys\ShakespeareanMonkeys_CSharp\obj\Debug\ShakespeareanMonkeys.pdb

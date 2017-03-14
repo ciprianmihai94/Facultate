@@ -1,0 +1,11 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.MainForm.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.pdb

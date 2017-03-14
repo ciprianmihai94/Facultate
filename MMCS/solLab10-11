@@ -1,0 +1,367 @@
+; Solutia aplicatiilor din Laboratorul nr. 12
+
+; Punctul 1: Sa se simuleze sistemul pentru 50 de cazuri de pacienti cu prioritate ridicata
+; rezolvate. 
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5
+QUEUE coadaMedic
+SEIZE medic
+DEPART coadaMedic
+ADVANCE 15,5
+RELEASE medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50
+QUEUE coadaMedic
+PREEMPT medic
+DEPART coadaMedic
+ADVANCE 120,15
+RETURN medic
+TERMINATE 1
+
+; Pentru rularea programului dam: START 50
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 2: Cerinta de la punctul 1., dar considerand pacientii cu 3 nivele de prioritate
+; (scazuta/medie/ridicata). Presupunem ca pacientii cu prioritate medie sosesc
+; la fiecare 150+-30 minute, iar consultatia dureaza 30+-15.
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic
+SEIZE medic
+DEPART coadaMedic
+ADVANCE 15,5
+RELEASE medic
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic
+PREEMPT medic
+DEPART coadaMedic
+ADVANCE 30,15
+RETURN medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+QUEUE coadaMedic
+PREEMPT medic,PR
+DEPART coadaMedic
+ADVANCE 120,15
+RETURN medic
+TERMINATE 1
+
+; Pentru rularea programului dam: START 50
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 3: Cerinta de la punctul 2. considerand ca exista doi/trei doctori care preiau
+; pacientii. Interpretati rezultatele obtinute.
+
+; Se considera ca exista 2 medici 
+medic STORAGE 2
+
+; Pentru cazul in care exista 3 medici, instructiunea STORAGE de mai sus devine:
+; medic STORAGE 3
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 15,5
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 30,15
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 120,15
+LEAVE medic
+TERMINATE 1
+
+; Pentru rularea programului dam: START 50
+
+; Observatie: Blocurile SEIZE, PREEMPT si ENTER determina definirea unei cozi de asteptare sau a unei cozi bazate
+; pe prioritati daca se precizeaza in blocul GENERATE prioritatea tranzactiei. 
+; In cazul in care folosim blocul SEIZE sau blocul ENTER avem urmatoarea proprietate:
+; daca facilitatea este ocupata de o tranzactie, chiar daca in sistem soseste o tranzactie cu prioritate mai mare,
+; tranzactia cu prioritate mai mare nu o poate inlatura pe cea care ocupa deja facilitatea.
+; In cazul in care folosim blocul ''PREEMPT facilitate,PR'' avem urmatoarea proprietate:
+; daca facilitatea este ocupata de o tranzactie si in sistem soseste o tranzactie cu prioritate mai mare - care
+; acceseaza blocul ''PREEMPT facilitate,PR'' - tranzactia cu prioritate mai mare o poate inlatura pe cea care ocupa 
+; deja facilitatea. Tranzactia care ocupa deja facilitatea va fi introdusa in coada de asteptare in functie de 
+; prioritatea pe care o are si in momentul in care va reocupa facilitatea va relua primirea serviciului din punctul 
+; in care a ramas.
+; Cititi in curs detalii de functionare a blocului PREEMPT!
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 4: Sa se studieze evolutia sistemelor simulate la punctele de mai sus dupa 24 de
+; ore.
+
+medic STORAGE 2
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 15,5
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 30,15
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 120,15
+LEAVE medic
+TERMINATE 
+
+GENERATE (24#60)
+TERMINATE 1
+
+; Pentru rularea programului dam: START 1
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 5: Extindeti sistemele modelate la punctul 3. adaugand in modelul de simulare
+; o noua etapa: pacientii cu prioritate ridicata dupa primirea primului ajutor
+; sunt trimisi cu probabilitatea de 0.5 intr-un salon in care li se administreaza
+; un tratament, timp de 70+-15 minute, dupa care se intorc la camera de garda
+; avand o prioritate mai mica, dar mai mare decat cea medie.
+
+medic STORAGE 2
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 15,5
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 30,15
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,4
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 120,15
+LEAVE medic
+TRANSFER 0.5,,salon
+TERMINATE 1 ; cazuri cu prioritate ridicata
+
+salon ADVANCE 70,15
+PRIORITY 3 ; modificarea prioritatii unei tranzactii
+QUEUE coadaMedic
+ENTER medic
+DEPART coadaMedic
+ADVANCE 20,5 ; nu se precizeaza in cerinta problemei, se considera ca durata celei de a doua consultatii este mai mica
+LEAVE medic
+TERMINATE 1 ; cazuri cu prioritate ridicata (a intrat in sistem ca pacient cu prioritate ridicata)
+
+; Pentru rularea programului dam: START 50
+; Rulati si pentru 100 de clienti cu prioritate ridicata pentru a observa ca in blocul ''salon ADVANCE 70,15'' intra 
+; aproximativ jumatate dintre pacientii cu prioritate ridicata!! 
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 6: Reprezentati grafic sub forma de histograma timpii de asteptare pentru pacientii
+; cu prioritate scazuta/medie/ridicata pentru a fi preluati de catre doctor/doctori.
+
+medic STORAGE 2
+
+; Histograma timpilor de asteptare pentru a ocupa o resura se poate realiza folosind blocurile QTABLE, QUEUE si DEPART
+; Deoarece vrem sa vizualizam separat repartitia timpilor de asteptare pentru fiecare grad de prioritate vom construi 
+; 3 histograme asociate celor 3 cozi de asteptare in care intra pacientii cu gradul de prioritate corespunzator
+; de exemplu, in coada numita coadaMedic1 intra doar pacientii cu prioritate scazuta
+
+histScazuta QTABLE coadaMedic1,30,30,15
+histMedie QTABLE coadaMedic2,10,10,15
+histRidicata QTABLE coadaMedic3,10,10,15
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic1
+ENTER medic
+DEPART coadaMedic1
+ADVANCE 15,5
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic2
+ENTER medic
+DEPART coadaMedic2
+ADVANCE 30,15
+LEAVE medic
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+QUEUE coadaMedic3
+ENTER medic
+DEPART coadaMedic3
+ADVANCE 120,15
+LEAVE medic
+TERMINATE 1 ; cazuri cu prioritate ridicata
+
+; Pentru a vizualiza grafic histogramele intrati in menu la Window - Simulation Window - Table Window
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 7: Reprezentati grafic distributia timpului petrecut de un pacient in spital.
+
+medic STORAGE 2
+histTimp TABLE M1,30,30,15
+; Distributia unei variabile aleatoare (in cazul nostru, a timpului petrecut de un pacient in spital) se reprezinta 
+; grafic prin histograma. In GPSS, histograma se construieste folosind blocurile TABLE si TABULATE.
+; Primul parametru din blocul TABLE reprezinta o expresie care se calculeaza atunci cand o tranzactie acceseaza blocul
+; TABULATE. Valoarea expresiei reprezinta o valoare de selectie asociata variabilei aleatoare. Dupa fiecare accesare
+; a blocului TABULATE se actualizeaza multimea de valori de selectie (pentru care se obtine histograma) cu un nou
+; element (cu o noua valoare de selectie).
+; M1 este o variabila a sistemului asociata unei tranzactii si actualizata de GPSS si reprezinta timpul 
+; (lungimea intervalului de timp) de cand a fost creata tranzactia si pana la momentul curent la care tranzactia
+; acceseaza un bloc in care se calculeaza variabila M1.
+; Parametrul A din TABLE (in cazul nostru M1) se calculeaza in momentul in care o tranzactie acceseaza blocul TABULATE.
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+QUEUE coadaMedic1
+ENTER medic
+DEPART coadaMedic1
+ADVANCE 15,5
+LEAVE medic
+TABULATE histTimp
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+QUEUE coadaMedic2
+ENTER medic
+DEPART coadaMedic2
+ADVANCE 30,15
+LEAVE medic
+TABULATE histTimp
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+QUEUE coadaMedic3
+ENTER medic
+DEPART coadaMedic3
+ADVANCE 120,15
+LEAVE medic
+TABULATE histTimp
+TERMINATE 1 
+
+; Se ruleaza programul pentru 50 de pacienti cu prioritate ridicata: START 50
+
+;-----------------------------------------------------------------------------------------
+
+; Punctul 8: Reprezentati grafic (in aceeasi fereastra) curbele asociate numarului de pacienti
+; cu prioritate scazuta/medie/ridicata si numarului total de pacienti din spital
+; la fiecare moment al timpului de simulare.
+
+medic STORAGE 2
+
+; pacienti cu prioritate scazuta
+GENERATE 10,5,,,1
+SAVEVALUE pacienti+,1
+SAVEVALUE pacientiScazuta+,1
+QUEUE coadaMedic1
+ENTER medic
+DEPART coadaMedic1
+ADVANCE 15,5
+LEAVE medic
+SAVEVALUE pacientiScazuta-,1
+SAVEVALUE pacienti-,1
+TERMINATE 
+
+; pacienti cu prioritate medie
+GENERATE 150,30,,,2
+SAVEVALUE pacienti+,1
+SAVEVALUE pacientiMedie+,1
+QUEUE coadaMedic2
+ENTER medic
+DEPART coadaMedic2
+ADVANCE 30,15
+LEAVE medic
+SAVEVALUE pacientiMedie-,1
+SAVEVALUE pacienti-,1
+TERMINATE 
+
+; pacienti cu prioritate ridicata
+GENERATE 250,50,,,3
+SAVEVALUE pacienti+,1
+SAVEVALUE pacientiRidicata+,1
+QUEUE coadaMedic3
+ENTER medic
+DEPART coadaMedic3
+ADVANCE 120,15
+LEAVE medic
+SAVEVALUE pacientiRidicata-,1
+SAVEVALUE pacienti-,1
+TERMINATE 1 
+
+; Se ruleaza programul pentru 50 de pacienti cu prioritate ridicata: START 50
+
+; Constructia graficului:
+; Pas 1: se compileaza programul - Command - Creare Simulation
+; Pas 2: se introduc informatiile necesare graficului conform descrierii de mai jos
+; Graficul are urmatoarea forma:
+; - pe axa OX este reprezentat timpul de simulare
+; - pe axa OY se reprezinta numarul de pacienti(total si cu prioritate scazuta/medie/ridicata) din sistem 
+; Graficul se construieste astfel:
+; - se intra in menu la Window - Simulation Window - Plot Window
+; - in campul Label se introduce numele graficului/curbei; de exemplu, pacientiScazuta
+; - in campul Expression se introduce expresia care se calculeaza la fiecare moment al timpului de simulare si a 
+; carei valoare se reprezinta pe axa OY. In cazul nostru, expresiile care se vor introduce pe rand, sunt 
+; X$pacienti, X$pacientiScazuta, X$pacientiMedie, X$pacientiRidicata
+; - dupa introducerea primelor valori in campurile Label si Expression 
+; (de exemplu, pacientiScazuta si respectiv X$pacientiScazuta) se apasa pe Plot si Memorize (pentru a retine 
+; graficele construite), se sterg valorile din campurile Label si Expression si se introduc noile valori
+; (de exemplu, pacientiMedie si respectiv X$pacientiMedie).
+; Pas 3: se ruleaza programul - Command - START 50
+
+
+
+

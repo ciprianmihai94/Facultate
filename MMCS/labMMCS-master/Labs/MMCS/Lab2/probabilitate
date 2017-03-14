@@ -1,0 +1,11 @@
+function [y,z] = probabilitate(x, n, p)
+
+	y = binocdf(x, n, p);
+	z = binopdf(0,n,p) + binopdf(1,n,p) + binopdf(2,n,p) + binopdf(3,n,p);
+	end;
+
+	>>[y,z]=probabilitate(3,50,0.2)
+
+
+	binocdf(3, 50, 0,2);
+	binopdf(0,50,0,2) + binopdf(1,50,0,2) + binopdf(2,50,0,2) + binopdf(3,50,0,2);

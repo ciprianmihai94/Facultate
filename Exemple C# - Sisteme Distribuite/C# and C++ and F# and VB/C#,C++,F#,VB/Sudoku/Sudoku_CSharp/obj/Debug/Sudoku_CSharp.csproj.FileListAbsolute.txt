@@ -1,0 +1,15 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\bin\Debug\Sudoku.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\bin\Debug\Sudoku.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\bin\Debug\Sudoku.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ImagePanel.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.NoFlickerPanel.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.PuzzleGrid.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.ScalingPanel.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.TextStatefulButton.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Controls.WinningAnimation.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.MainForm.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.OptionsDialog.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Sudoku.Strings.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Sudoku_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Sudoku.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Sudoku\Sudoku_CSharp\obj\Debug\Sudoku.pdb

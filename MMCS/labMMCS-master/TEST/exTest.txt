@@ -1,0 +1,43 @@
+plata VARIABLE RN1@2
+hist_asteptare QTABLE coada_reteta,100,100,20
+hist_retete TABLE M1,100,100,20
+
+
+GENERATE(Exponential(1,0,2))
+
+TEST G C1,180,et
+TEST L C1,300,et
+SAVEVALUE numar+,1
+
+et TRANSFER 0.7,,departajare
+QUEUE coada_reteta
+SEIZE tranzactie_retete
+ADVANCE 8,2
+ADVANCE((V$plata)#2)
+DEPART coada_reteta
+RELEASE tranzactie_retete
+
+TABULATE hist_retete
+
+TRANSFER ,iesire
+
+departajare TRANSFER 0.5,,form2
+QUEUE coada_farmacista1
+SEIZE farmacista1
+ADVANCE 4,1
+ADVANCE((V$plata)#2)
+DEPART coada_farmacista1
+RELEASE farmacista1
+
+TRANSFER ,iesire
+form2 QUEUE coada_farmacista2
+SEIZE farmacista2
+ADVANCE 4,1
+ADVANCE((V$plata)#2)
+DEPART coada_farmacista2
+RELEASE farmacista2
+
+iesire TERMINATE
+
+GENERATE 480
+TERMINATE 1

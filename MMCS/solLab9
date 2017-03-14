@@ -1,0 +1,82 @@
+; Solutie Laborator 11
+
+; Punctul 1: Sa se simuleze sistemul pentru 100 de clienti care au iesit din farmacie. 
+
+GENERATE 7
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 1
+
+; Punctul 2: Cerinta de la punctul 1., dar considerand ca lungimea intervalului de timp (in-
+tervalului de intersosire a clientilor) dupa care soseste un nou client in farmacie
+este repartizata uniform discret pe intervalul (8,12).
+
+GENERATE 10,2
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 1
+
+; Punctul 3: Presupunem ca in farmacie sosesc clienti cu retete la fiecare 20 de minute si
+clienti fara retete la un interval de timp repartizat uniform pe (2,10) (valorile
+2 si 10 sunt considerate minute). Sa se simuleze sistemul pentru 100 de clienti
+cu retete care au iesit din farmacie.
+
+; clienti cu retete
+GENERATE 20
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 1
+
+; clienti fara retete
+GENERATE 6,4
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 
+
+; Pentru rularea programului dam: START 100
+
+; Punctul 4: Sa se simuleze sistemul timp de o zi de lucru.
+
+; clienti cu retete
+GENERATE 20
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 
+
+; clienti fara retete
+GENERATE 6,4
+QUEUE coadaCasa
+SEIZE farmacist
+DEPART coadaCasa
+ADVANCE 10,5
+RELEASE farmacist
+TERMINATE 
+
+; Varianta 1: simularea sistemului timp de o zi de lucru = 480 de minute
+
+GENERATE 1
+TERMINATE 1
+
+; Pentru rularea programului dam: START 480
+
+;Varianta 2: simularea sistemului timp de o zi de lucru = 480 de minute
+
+;GENERATE 480
+;TERMINATE 1
+
+; Pentru rularea programului dam: START 1

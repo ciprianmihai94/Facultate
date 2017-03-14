@@ -1,0 +1,6 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\bin\Debug\NBodySimulationBackend.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\bin\Debug\NBodySimulationBackend.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\bin\Debug\FSharp.Core.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\bin\Debug\FSharp.Core.xml
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\obj\Debug\NBodySimulationBackend.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NBodySimulation\NBodySimulationBackend\obj\Debug\NBodySimulationBackend.pdb

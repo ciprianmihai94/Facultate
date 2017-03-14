@@ -1,0 +1,17 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\bin\Debug\DiningPhilosophers.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\bin\Debug\DiningPhilosophers.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\bin\Debug\DiningPhilosophers.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\MainWindow.g.cs
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\App.g.cs
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers_MarkupCompile.cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers_MarkupCompile.lref
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\MainWindow.baml
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers.g.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\DiningPhilosophers\DiningPhilosophers_CSharp\obj\Debug\DiningPhilosophers.pdb

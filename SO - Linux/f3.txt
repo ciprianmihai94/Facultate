@@ -1,0 +1,87 @@
+#include <stdlib.h>
+#include <limits.h>
+#include <stdio.h>
+#include <errno.h>
+
+int
+main(int argc, char *argv[])
+{
+    char *endptr;
+    int n;
+    if (argc != 2)
+    {
+       fprintf(stderr,"Utilizare : %s numar\n",argv[0]);
+       exit(EXIT_FAILURE);
+    }
+    char *p=strchr(argv[1],'-');
+    if(p!=NULL)
+    {
+        fprintf(stderr,"Numar negativ %s\n",p);
+        exit(EXIT_FAILURE);
+    }
+    errno = 0;
+    n = strtol(argv[1], &endptr, 10);
+
+    if ((errno == ERANGE && (n == LONG_MAX || n == LONG_MIN)))
+    {
+       perror("strtol");
+       exit(EXIT_FAILURE);
+    }
+
+    if (endptr == argv[1]) {
+       fprintf(stderr, "%s nu e numar\n",argv[1]);
+       exit(EXIT_FAILURE);
+    }
+
+    if (*endptr != '\0')
+    {
+        fprintf(stderr,"%s nu e numar\n",argv[1]);
+        exit(EXIT_FAILURE);
+    }
+
+    int j=0,i;
+    if(n==1) //daca numarul este egal cu 1 il afisez
+    {
+    printf("%d = %d",n,n);
+    }
+    else
+    {
+        if(n==0)//daca numarul e null afisez
+        {
+            fprintf(stderr,"Valoare nula\n");
+            exit(EXIT_FAILURE);
+        }
+        else
+        {
+            printf("%d = ",n);//afisez n=
+            for(i=2;i<=n;i++)
+            {
+                while(n%i==0)
+                {
+                    j++;
+                    n/=i;
+                }
+                if(j)
+                {
+                    if(j==1)
+                    {
+                        if(n>1)
+                            printf("%d * ",i);//daca se imparte doar o data
+                        else
+                            printf("%d ",i);//daca nr 1 inseamna ca e ultimul
+                    }
+                    else
+                    {
+                        if(n>1)
+                            printf("%d^%d * ",i,j);
+                        else
+                            printf("%d^%d ",i,j);
+                    }
+                j=0;
+                }
+            }
+        }
+    }
+    printf("\n");
+    exit(EXIT_SUCCESS);
+}

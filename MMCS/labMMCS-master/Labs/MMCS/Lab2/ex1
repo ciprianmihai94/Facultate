@@ -1,0 +1,13 @@
+
+x = -10 : 1 : 10 ;
+for i=-10 : 1 : 10 ;
+	if (i <= 2)
+		f(i+11) = 2 * i + 8;
+	elseif (i > 2)
+		f(i+11) = 3 * i^2;
+	end
+end
+plot(x, f);
+xlabel('x');
+ylabel('f(x)'); title('Graficul functiei f(x)');
+

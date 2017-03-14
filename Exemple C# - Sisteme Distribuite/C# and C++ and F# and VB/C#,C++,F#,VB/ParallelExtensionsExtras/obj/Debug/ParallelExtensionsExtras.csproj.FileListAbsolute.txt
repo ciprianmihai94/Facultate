@@ -1,0 +1,5 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ParallelExtensionsExtras\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ParallelExtensionsExtras\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.csprojResolveAssemblyReference.cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\ParallelExtensionsExtras\obj\Debug\ParallelExtensionsExtras.pdb

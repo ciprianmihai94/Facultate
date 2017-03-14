@@ -1,0 +1,103 @@
+GENERATE 58 
+QUEUE COADA 
+SEIZE BENZINA 
+DEPART COADA 
+ADVANCE 51
+RELEASE BENZINA 
+TERMINATE 1
+
+-------------------------
+
+GENERATE 58 
+QUEUE COADA 
+SEIZE BENZINA 
+DEPART COADA 
+ADVANCE 65 
+RELEASE BENZINA 
+TERMINATE 1
+
+-------------------------
+
+GENERATE 54, 4 
+QUEUE COADA 
+SEIZE BENZINA 
+DEPART COADA 
+ADVANCE 65 
+RELEASE BENZINA 
+TERMINATE 1
+
+-------------------------
+
+GENERATE 58 
+QUEUE MASINAR 
+SEIZE BENZINA 
+DEPART MASINAR
+ADVANCE 54 
+RELEASE BENZINA 
+TERMINATE 0
+
+GENERATE 50 
+QUEUE MASINAA 
+SEIZE BENZINA 
+DEPART MASINAA 
+ADVANCE 54 
+RELEASE BENZINA 
+TERMINATE 1
+
+-------------------------
+
+centrala storage 2
+generate 100,60
+gate snf centrala,asteapta
+enter centrala
+advance 180,60
+leave centrala
+terminate 1
+
+asteapta advance 300,60
+transfer ,intrare
+
+-------------------------
+
+centrala storage 2
+
+generate 100,60
+intrare gate snf centrala,asteapta
+enter centrala
+advance 180,60
+leave centrala
+queue fax
+seize fax
+depart fax
+advance 600,180
+release fax
+terminate 1
+
+asteapta advance 300,60
+transfer ,intrare
+
+-------------------------
+hist table m1,100,100,20
+centrala storage 2
+generate 100,60
+intrare gate snf centrala,asteapta
+enter centrala
+advance 180,60
+leave centrala
+tabulate hist
+queue fax
+seize fax
+depart fax
+advance 600,180
+release fax
+terminate 1
+
+asteapta advance 300,60
+transfer ,intrare
+
+nume_hist TABLE A,B,C,D
+--> A: expresie care furnizeaza valori de selectie asociatie var aleatoare
+--> M1: atribut care returneaza timpul de simulare  de cand a fost creata tranzactia prin blocul generate 
+        si pana in momentul in care se calculeaza in program acest atribut
+
+

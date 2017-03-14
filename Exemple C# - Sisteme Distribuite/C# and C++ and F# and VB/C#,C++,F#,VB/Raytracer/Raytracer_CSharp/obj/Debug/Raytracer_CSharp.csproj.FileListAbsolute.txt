@@ -1,0 +1,11 @@
+E:\locals\PFX-Extras\NET4\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\Raytracer.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\Raytracer.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\Raytracer.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\Raytracer.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.MainForm.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\obj\Debug\Microsoft.ParallelComputingPlatform.ParallelExtensions.Samples.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\obj\Debug\Raytracer_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\obj\Debug\Raytracer.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\Raytracer\Raytracer_CSharp\obj\Debug\Raytracer.pdb

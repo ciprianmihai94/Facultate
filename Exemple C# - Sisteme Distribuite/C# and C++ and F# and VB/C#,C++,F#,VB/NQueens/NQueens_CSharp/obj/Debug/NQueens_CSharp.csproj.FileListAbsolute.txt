@@ -1,0 +1,9 @@
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\bin\Debug\NQueens.exe.config
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\bin\Debug\NQueens.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\bin\Debug\NQueens.pdb
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens_CSharp.MainForm.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens_CSharp.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens_CSharp.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens.exe
+C:\Users\Ciprian Mihai\Desktop\Samples SD\C# and C++ and F# and VB\C#,C++,F#,VB\NQueens\NQueens_CSharp\obj\Debug\NQueens.pdb

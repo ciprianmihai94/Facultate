@@ -1,0 +1,27 @@
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsApplication2.Form1.resources
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+E:\SistDist\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\SistDist\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\SistDist\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+E:\SistDist\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsApplication2.Form1.resources
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Raul Iordache\Documents\Visual Studio 2015\Projects\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsApplication2.Form1.resources
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Ciprian Mihai\Desktop\Server\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
