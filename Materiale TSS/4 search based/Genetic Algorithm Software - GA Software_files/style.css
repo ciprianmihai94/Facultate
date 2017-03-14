@@ -1,0 +1,75 @@
+.TopMenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: #fff; FONT-FAMILY: verdana, arial, helvetica; TEXT-DECORATION: none
+}
+.TopMenuOn {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: #fc3; FONT-FAMILY: verdana, arial, helvetica; TEXT-DECORATION: none
+}
+A.TopMenuOn:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.TopMenu:hover {
+	COLOR: #fc3; TEXT-DECORATION: underline
+}
+.tablebackground {
+	BACKGROUND: #666666; COLOR: white
+}
+.NavLeftTablebackground {
+	BACKGROUND: #333333; COLOR: white
+}
+.NavTop {
+	FONT-WEIGHT: bold; FONT-SIZE: 8.5pt; COLOR: white; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.NavLeft {
+	FONT-WEIGHT: bold; FONT-SIZE: 8.5pt; COLOR: #004800; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.NavTopHighLight {
+	FONT-WEIGHT: bold; FONT-SIZE: 8.5pt; BACKGROUND: #cccccc; COLOR: black; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.navtopTDhighlight {
+	COLOR: black; BACKGROUND-COLOR: #cccccc
+}
+.Navleft1 {
+	FONT-SIZE: 8.5pt; COLOR: white; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.Navlefthighlight1 {
+	FONT-SIZE: 8.5pt; COLOR: black; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.navleftTDhighlight1 {
+	FONT-SIZE: 8.5pt; BACKGROUND: white; COLOR: black; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+.Navleft3 {
+	FONT-SIZE: 8.5pt; COLOR: black
+}
+.Navleft3highlight {
+	FONT-SIZE: 8.5pt; COLOR: #993300
+}
+A.NavTop:hover {
+	COLOR: #f5c217
+}
+A.NavLeft:hover {
+	COLOR: #f5c217
+}
+A.Navleft1:hover {
+	COLOR: #f5c217
+}
+A.HeaderCategory:hover {
+	COLOR: #3366cc; TEXT-DECORATION: underline
+}
+.NavSide {
+	FONT-WEIGHT: bold; FONT-SIZE: 8.5pt; COLOR: black; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+A.NavSide:hover {
+	COLOR: #e64c00
+}
+.NavSideSmall {
+	FONT-SIZE: 8pt; COLOR: #0003fc; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: none
+}
+A.NavSideSmall:hover {
+	COLOR: #e64c00
+}
+.menulink {
+	FONT-SIZE: 10pt; COLOR: #0003fc; FONT-FAMILY: Arial,Helvetica; TEXT-DECORATION: underline
+}
+A.menulink:hover {
+	COLOR: #000080
+}
